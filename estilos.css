@@ -1,0 +1,164 @@
+body
+{
+	background-color: #ccc;
+	font-family: Helvetica;
+}
+
+.contenedor
+{
+ text-align: center;
+ padding: 6em 6em;
+}
+
+#miBoton_xD
+{
+ width: 200px;
+ height: 60px;
+ margin: 7em auto;
+
+ display: inline-block;
+		margin-right: .5em;
+		box-shadow: inset 0px 1px 0px rgba(255,255,255,0.4),
+						0px 0px 25px rgba(0,0,0,0.3);
+		
+		padding: 20px 20px;
+		border: 1px solid #562f15;
+		font-size: 20px;
+		font-weight: normal;
+		color: #fff;
+		text-shadow: 1px 1px 1px #7f130a;
+		border-radius: 3px;
+		cursor: pointer;
+		background: rgb(147,80,36);
+		background: -moz-linear-gradient(top,  rgba(147,80,36,1) 19%, rgba(106,58,26,1) 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(19%,rgba(147,80,36,1)), color-stop(100%,rgba(106,58,26,1)));
+		background: -webkit-linear-gradient(top,  rgba(147,80,36,1) 19%,rgba(106,58,26,1) 100%);
+		background: -o-linear-gradient(top,  rgba(147,80,36,1) 19%,rgba(106,58,26,1) 100%);
+		background: -ms-linear-gradient(top,  rgba(147,80,36,1) 19%,rgba(106,58,26,1) 100%);
+		background: linear-gradient(to bottom,  rgba(147,80,36,1) 19%,rgba(106,58,26,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#935024', endColorstr='#6a3a1a',GradientType=0 );
+}
+
+
+#miBoton_xD:hover
+ {
+			background: rgb(167,91,41);
+			background: -moz-linear-gradient(top,  rgba(167,91,41,1) 19%, rgba(126,69,31,1) 100%);
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(19%,rgba(167,91,41,1)), color-stop(100%,rgba(126,69,31,1)));
+			background: -webkit-linear-gradient(top,  rgba(167,91,41,1) 19%,rgba(126,69,31,1) 100%);
+			background: -o-linear-gradient(top,  rgba(167,91,41,1) 19%,rgba(126,69,31,1) 100%);
+			background: -ms-linear-gradient(top,  rgba(167,91,41,1) 19%,rgba(126,69,31,1) 100%);
+			background: linear-gradient(to bottom,  rgba(167,91,41,1) 19%,rgba(126,69,31,1) 100%);
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a75b29', endColorstr='#7e451f',GradientType=0 );
+}
+
+#miBoton_xD:active 
+{
+			box-shadow: 0px 0px 25px rgba(0,0,0,0.3),
+							inset 0px 0px 20px #412410;
+	width: 195px;
+	height: 57px;
+}
+
+
+/*--------------------MODAL-----------------------------*/
+
+
+.capa-contenedoramodal {
+    display: none;
+    content: " ";
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: -moz-radial-gradient(center, ellipse cover,  rgba(127,127,127,0.5) 0%, rgba(127,127,127,0.7) 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(127,127,127,0.7)), color-stop(100%,rgba(127,127,127,0.9)));
+    background: -webkit-radial-gradient(center, ellipse cover,  rgba(127,127,127,0.5) 0%,rgba(127,127,127,0.7) 100%);
+    background: -o-radial-gradient(center, ellipse cover,  rgba(127,127,127,0.5) 0%,rgba(127,127,127,0.7) 100%);
+    background: -ms-radial-gradient(center, ellipse cover,  rgba(127,127,127,0.5) 0%,rgba(127,127,127,0.7) 100%);
+    background: radial-gradient(center, ellipse cover,  rgba(127,127,127,0.5) 0%,rgba(127,127,127,0.7) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007f7f7f', endColorstr='#e67f7f7f',GradientType=1 );
+    z-index: 100;
+  }
+  
+  .modalClaro {
+    display: block;
+    background: #fcfcfc;
+    margin: 7em auto;
+    width: 450px;
+    padding: 15px 20px 20px;
+    text-align: left;
+    z-index: 9999;
+    border-radius: 4px;
+    border: 3px solid #DF0708;
+    background-color:#f1f3f3;
+    box-shadow: 0px 0px 30px rgba(0,0,0,0.3);
+    -webkit-transition: 0.3s ease-out;
+    -moz-transition: 0.4s ease-out;
+    -ms-transition: 0.4s ease-out;
+    -o-transition: 0.4s ease-out;
+    transition: 0.4s ease-out;
+    opacity: 0;
+  }
+  .modalcontenido
+  {
+    overflow:auto;
+    height: auto;
+    padding: 30px 15px 30px 15px ;
+    min-height: 150px;
+    background-color: #fff;
+  }
+  .acercar {
+    -webkit-transform:  scale(1.2);
+    -moz-transform:  scale(1.2);
+    -ms-transform:  scale(1.2);
+    transform:  scale(1.2);
+  }
+  
+  
+  .modalClaro-visible {
+    -webkit-transform:  scale(1);
+    -moz-transform:  scale(1);
+    -ms-transform:  scale(1);
+    transform:  scale(1);
+    opacity: 1;
+  }
+  
+  .cerrar
+   {  
+      cursor: pointer;
+      background-color:#ccc;
+      font-weight: bold;
+      border-radius: 6px;
+    }
+  
+.modalfooter
+{
+  text-align: right;
+  padding: 0px;
+
+}
+.modalfooter > button
+{
+   margin-top: 10px;
+   margin-bottom: -7px;
+   padding: 5px 15px 5px 15px;
+  
+}
+
+.modalhead>h3
+{
+  margin: 0px;
+  padding: 0px;
+}
+.modalhead
+{
+  text-align: center;
+  color: #E0081A;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 18px;
+  padding: 0px 6px 12px 6px;
+
+}
